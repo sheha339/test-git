@@ -15,4 +15,4 @@
       connection: local
       copy:
         content: "{{ config.stdout[0] }}"
-        dest: "root@10.10.1.66:/var/lib/awx/projects/sw-access/backup/{{ inventory_hostname }}_run_cfg_{{ time }}.txt"
+        dest: "/home/backup/devcisco/{{ inventory_hostname }}_run_cfg_{{ time }}.txt"
